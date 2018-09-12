@@ -139,4 +139,8 @@ declare namespace dw.system {
 		setVaryBy(varyBy: string): void;
 	}
 
+	declare class PipelineDictionary extends Object {
+
+	}
+
 }
