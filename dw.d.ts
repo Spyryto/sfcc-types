@@ -16,6 +16,7 @@ declare var module: Module;
 declare var request: dw.system.Request;
 declare var response: dw.system.Response;
 declare var session: Session;
+declare var pdict: dw.system.PipelineDictionary;
 
 // constructors
 // -
@@ -40,3 +41,7 @@ declare static function parseInt(s: string): number;
 declare static function require(path: string): Module;
 declare static function trace(msg: string, ...params: Object): void;
 declare static function unescape(string: string): string;
+
+declare static function empty(object: any): boolean;
+declare static function isEmpty(collection: dw.util.Collection<T>): boolean;
+declare static function isNotEmpty(arg: any, msg: string): void;
